@@ -9,17 +9,20 @@
         <title>Dany Sigha</title>
         <link rel="stylesheet" href="style.css">
 
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap" rel="stylesheet"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@700&display=swap" rel="stylesheet"> -->
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,6 +36,9 @@
                 <h1 class="greetings">Hello world, I'm Dany Sigha</h1>
             </div>
         </header>
+
+        <canvas id="canvas1"></canvas>
+        <script src="script.js"></script>
 
         <nav>
             <a href="#about_me" id="button_about">
@@ -74,23 +80,25 @@
                     <div class="short_bio" id = "about_me">
 
                         <h1>My very short bio</h1>
-                        <p>
-                            If I had to describe myself in three words I'd say that I am
-                            <em>principled</em> 🛐, <em>resilient</em> 🏋🏾,  and <em>conscientious</em> 🧐. 
-                        </p>
-
-                        <img id="headshot" src="images/my_picture.jpg" alt="A professional headshot of Dany" width="250">
+                        <div>
+                            <p>
+                                I am <em>principled</em>, <em>resilient</em>, and <em>conscientious</em>, shaped by a life lived in diverse settings such as Gabon, the United States of America, China, and Israel. Fluent in both French and English, with limited working proficiency in mandarin, I obtained a Bachelor of Science in Computer Science from New York University Shanghai ('24). I have experience using <em>Python</em>, <em>C</em>, and <em>JavaScript</em>. Beyond coding, I find joy in soccer and cooking.
+                            </p>
+    
+                            <img id="headshot" src="images/my_picture.png" alt="A professional headshot of Dany">
+                        </div>
+                        
 
                     </div>
 
 
-                    <div class="conteneur_long_bio">
+                    <!-- <div class="conteneur_long_bio">
                         <div class="long_bio">
                             <h1>A longer bio</h1>
                                 <p>
                                     My full name is Nohonet Sigha Dany De Leriol but I go by Dany for convenience.
                                     I lived in diverse settings 🇬🇦🇺🇸🇨🇳🇮🇱 for the major part of my life.
-                                    I speak two languages fluently 🇫🇷🇬🇧 and I have a Bachelor's degree in Computer Science (NYUSH 24').
+                                    I speak two languages fluently 🇫🇷🏴󠁧󠁢󠁥󠁮󠁧󠁿 and I have a Bachelor's degree in Computer Science (NYUSH 24').
                                     I have programming experience in <em>Python</em>, <em>C</em>, and <em>javascript</em>. Oh, and for fun I watch soccer and cook.
                                 </p> 
                         </div>
@@ -98,7 +106,7 @@
                         <div>
                             <img id = "travels" src="images/travels.png" alt="Pictures of Dany in the U.S., China, Gabon and Israel" width="450">
                         </div>
-                    </div>
+                    </div> -->
 
                 </section>
                 
@@ -123,7 +131,7 @@
                             
                             <aside class="video_one">
                                 <h2>Demonstration</h2> 
-                                <iframe src="https://www.youtube.com/embed/Sw2OPs7z708?si=sm71tUs8v10LjGh0" title="YouTube video player" 
+                                <iframe src="https://www.youtube.com/embed/5HKPmWRBHsQ?si=svQwHsooaSwgr_Wu" title="YouTube video player" 
                                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                     allowfullscreen> 
                                 </iframe>
@@ -132,7 +140,7 @@
                             
                             <div>
                                 <a href="https://github.com/danysigha/uefa_visual_narrative" target="_blank" title = "A multilayer visualization of UEFA Champions League data"> 
-                                    <h2>UEFA Champions League – A visual narrative</h2>
+                                    <h2>UEFA Champions League – a visual narrative</h2>
                                 </a>
                                 <p>
                                     Mohamed and I visualized a UEFA Champions League dataset composed of different tables about UEFA teams, countries, players, goals, and coaches from 1992 to 2022 (34 seasons). 
@@ -150,19 +158,43 @@
                                 </iframe>
                             </aside>
 
+
+                            <div>
+                                <a href="https://github.com/mhendy25/offline_network_traffic_analyzer" target="_blank" title = "An offline packet sniffer and hex dump parser"> 
+                                    <h2>SniffSift – an offline network traffic analyzer</h2>
+                                </a>
+                                <p>
+                                    The input of the analyzer is a hex dump text file containing the bytes of multiple packets captured on an Ethernet link. 
+                                    It can run in a terminal (i.e., command-line prompt). 
+                                    The list of protocols that the analyzer is able to decode are the following:
+                                    Layer 2 (Ethernet), Layer 3 (IP), Layer 4 (UDP), Layer 7 (DNS and DHCP).
+                                    After running the program, the user is able to save the output of the analyzer in a text file using the save command. 
+                                    The text file is formatted to ease the readability of the output.
+                                </p>
+                                
+                            </div>
+                            
+                            <aside class="video_three">
+                                <h2>Demonstration</h2> 
+                                <iframe src="https://www.youtube.com/embed/Ltzb6gfY8uk?si=8PgAEypbuf3xPl8e" title="YouTube video player" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen> 
+                                </iframe>
+                            </aside>
+
                             
                             <div>
-                                <a href="https://cs.nyu.edu/~mwalfish/classes/23sp/labs/lab4.html" target="_blank" title = "A tiny (but real!) operating system called WeensyOS"> 
+                                <a href="https://gitlab.com/danysigha/kernel_development" target="_blank" title = "A tiny (but real!) operating system called WeensyOS"> 
                                     <h2>WEENSY OS – a guided kernel implementation</h2>
                                 </a>
                                 <p>
-                                    In lab 4 I implemented process memory isolation, virtual memory, and a system call (fork()) in a tiny (but real!) operating system, 
+                                    I implemented process memory isolation, virtual memory, and a system call (fork()) in a tiny (but real!) operating system, 
                                     called WeensyOS. The WeensyOS kernel runs on x86-64 CPUs, so I run WeensyOS in QEMU. QEMU is a software-based x86-64 emulator: it “looks” 
                                     to WeensyOS just like a physical x86-64 CPU with a particular hardware configuration.
                                 </p>
                             </div>
                             
-                            <aside class="video_three">
+                            <aside class="video_four">
                                 <h2>Demonstration</h2> 
                                 <iframe src="https://www.youtube.com/embed/Sw2OPs7z708?si=sm71tUs8v10LjGh0" title="YouTube video player" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
