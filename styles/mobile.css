@@ -1,0 +1,113 @@
+
+@media screen and (max-width: 880px) {
+    /* can also add a range min and max */
+    #travels{
+        display: none;
+    }
+
+    .video_one iframe,
+    .video_two iframe, 
+    .video_three iframe{
+        width: 90%;
+        height:50%;
+    }
+
+   
+
+    .video_four iframe{
+        width: 90%;
+        height:70%;
+    }
+
+    .conteneur_experience{
+        margin-left: 1%;
+        width: 100%;
+    }
+
+    .experience1,
+    .experience2{
+        padding-left: 5%;
+        padding: 0px;
+        margin-left: 1%;
+    }
+
+    .conteneur_activities div{
+        width: 100%;
+        padding-left: 5%;
+        padding: 0px;
+        margin-left: 1%;
+    }
+
+    .conteneur_activities{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    nav a,
+    nav a:hover{
+        gap: 7px;
+        font-size: 0.7em;
+    }
+
+}
+
+
+@media screen and (max-width: 699px) { 
+
+    #travels{
+        display: none;
+    }
+
+    .video_one iframe,
+    .video_two iframe,
+    .video_three iframe{
+        width: 90%;
+        height:50%;
+    }
+
+    .video_four iframe{
+        width: 90%;
+        height:70%;
+    }
+
+    .short_bio p{
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+    }
+
+    nav{
+        margin-left: 0em;
+    }
+
+    nav a,
+    nav a:hover{
+        gap: 7px;
+        font-size: 0.7em;
+    }
+
+    .conteneur_experience{
+        margin-left: 1%;
+        width: 100%;
+    }
+
+    .greetings{
+        padding-top: 5em;
+    }
+    
+}
+
+
+@media screen and (max-width: 450px) { 
+
+    nav a,
+    nav a:hover{
+        gap: 7px;
+        font-size: 0.6em;
+    }
+
+    .short_bio img{
+        width: 200px;
+    }
+    
+}
