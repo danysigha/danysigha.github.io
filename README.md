@@ -1,2 +1,2 @@
 # portfolio-website
-Dany Sigha'a portfolio website.
+Dany Sigha's portfolio website.
