@@ -139,7 +139,7 @@ em{
 
 .short_bio img{
     padding-bottom: 3em;
-    width: 300px;
+    width: 30em;
     filter: drop-shadow(10px 10px 10px #222);
     /* box-shadow: 6px 6px 25px rgba(0, 0, 0, 1); */
 }
