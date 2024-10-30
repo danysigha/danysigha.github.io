@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Dany Sigha">
-        <meta name="description" content="Dany Sigha's portfolio webpage. It contains domonstrations of his past projects and summaries of his work experiences.">
+        <meta name="description" content="Dany Sigha's portfolio webpage. Demonstrations of Dany Sigha's past projects and summaries of his work experiences.">
         <meta name="keywords" content="Dany Sigha, New York University, Northeastern, Boston, New York, Shanghai, Software Engineer, Entrepreneur">
         <meta name="robots" content="all">
 
@@ -21,7 +21,7 @@
         <meta property="og:url" content="https://danysigha.github.io/" />
         <meta property="og:image" content="https://danysigha.github.io/images/my_picture.png" />
 
-        <title>Dany Sigha</title>
+        <title>Portfolio Website - Dany Sigha - Entry-level software engineer, NYUSH'24, NEU'26</title>
 
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <link rel="stylesheet" href="styles/style.css">
@@ -50,8 +50,8 @@
 
     <body>
         <header>
-            <div class="greetings_container">
-                <h1 class="greetings">Hello world, I'm Dany Sigha</h1>
+            <div itemscope itemtype="https://schema.org/Person" class="greetings_container">
+                <h1 class="greetings">Hello world, I'm <span itemprop="name">Dany Sigha</span> </h1>
             </div>
         </header>
 
@@ -95,15 +95,38 @@
             <div class="sub_body">
 
                 <section class="bio">
-                    <div class="short_bio" id = "about_me">
+                    <div itemscope itemtype="https://schema.org/Person" class="short_bio" id = "about_me">
 
                         <h1>My very short bio</h1>
                         <div>
                             <p>
-                                I am <em>principled</em>, <em>resilient</em>, and <em>conscientious</em>, shaped by a life lived in diverse settings such as Gabon, the United States of America, China, and Israel. Fluent in both French and English, with limited working proficiency in mandarin, I obtained a Bachelor of Science in Computer Science from New York University Shanghai ('24). I have experience using <em>Python</em>, <em>C</em>, and <em>JavaScript</em>. Beyond coding, I find joy in soccer and cooking.
+                                Proactive <span itemprop="jobTitle"> Software Engineer</span>ing 
+                                graduate student with hands-on experience in IT consulting,
+                                where I developed web sites. Strong understanding of the <span itemprop="knowsAbout">Software Design Cycle</span>, 
+                                demonstrated through successful project completions. Proficient in 
+                                <em itemprop="knowsAbout">Python</em>, <em itemprop="knowsAbout">HTML</em>, <em itemprop="knowsAbout">CSS</em>, 
+                                with a passion for developing innovative solutions. Eager to leverage my skills in a collaborative 
+                                development role while continuously exploring new technologies and methodologies.
+                                <br><br>
+                                I am <em>principled</em>, <em>resilient</em>, and <em>conscientious</em>, shaped by a life lived in 
+                                diverse settings such as Gabon, the United States of America, China, and Israel. Fluent in both 
+                                <span itemprop="knowsLanguage">French</span> 
+                                and <span itemprop="knowsLanguage">English</span>, with limited working proficiency in 
+                                <span itemprop="knowsLanguage">Mandarin</span>, I obtained a 
+                                <span itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                                    <span itemprop="credentialCategory">Bachelor of Science in Computer Science</span> 
+                                </span>
+                                from <span itemprop="alumniOf" itemscope itemtype="https://schema.org/CollegeOrUniversity"> 
+                                    <span itemprop="name">New York University</span> Shanghai
+                                </span> ('24). I am currenlty 
+                                completing my masters in Software Engineering at 
+                                <span itemprop="affiliation" itemscope itemtype="https://schema.org/Organization"> 
+                                    <span itemprop="legalName">Northeastern University</span>. 
+                                </span>
+                                    Beyond coding, I find joy in soccer and cooking.
                             </p>
     
-                            <img id="headshot" src="images/my_picture.png" alt="A professional headshot of Dany">
+                            <img id="headshot" src="images/my_picture.png" itemprop="image" alt="A professional headshot of Dany">
                         </div>
                         
 
@@ -230,8 +253,13 @@
 
 
                     <div class="conteneur_experience">
-                        <div class="experience1">
-                            <h2>Software Engineer Intern @ <a href="https://www.it-corp.co/" title = "Software vendor and IT service provider" target="_blank">IT CORP</a> </h2>
+                        <div itemscope itemtype="https://schema.org/Person" class="experience1">
+                            <h2> <span itemprop="hasOccupation" itemscope itemtype="https://schema.org/Occupation"> 
+                                    <span itemprop="name">Software Engineer Intern</span>
+                                </span> 
+                                
+                                @ <a href="https://www.it-corp.co/" title = "Software vendor and IT service provider" target="_blank">IT CORP</a> 
+                            </h2>
                             <ul>
                                 <li>Employed a mobile first approach to design and deploy 2 responsive static websites with HTML5 and CSS3</li>
                                 <li>Developed and refined use case and class diagrams for a library management system and theft report software</li>
@@ -408,8 +436,8 @@
                 <section class="contact_me" id="contact_me">
                     <h1>Get in touch</h1>
 
-                    <div class="follow_me_links">
-                        <a href="mailto:nohonetdany@gmail.com" target="_blank"> 
+                    <div itemscope itemtype="https://schema.org/Person" class="follow_me_links">
+                        <a itemprop="email" href="mailto:nohonetdany@gmail.com" target="_blank"> 
                             <img src="images/envelope-regular.svg" alt="An envelope icon" width="50" height="60"> 
                         </a>
                         <a href="https://github.com/danysigha" target="_blank"> 
