@@ -1,0 +1,57 @@
+
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+    
+    @if $index {
+      @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+    
+    @return $string;
+  }
+
+$sizes: 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8;
+
+@each $size in $sizes{
+    $value-no-dot: str-replace("#{ $size }", ".", "_");
+
+    .pd-#{$value-no-dot}{
+        padding: #{$size}em;
+    }
+
+    .pd-bottom-#{$value-no-dot}{
+        padding-bottom: #{$size}em;
+    }
+
+    .pd-left-#{$value-no-dot}{
+        padding-left: #{$size}em;
+    }
+
+    .pd-right-#{$value-no-dot}{
+        padding-right: #{$size}em;
+    }
+
+    .pd-top-#{$value-no-dot}{
+        padding-top: #{$size}em;
+    }
+
+    .mg-#{$value-no-dot}{
+        margin: #{$size}em;
+    }
+
+    .mg-bottom-#{$value-no-dot}{
+        margin-bottom: #{$size}em;
+    }
+
+    .mg-left-#{$value-no-dot}{
+        margin-left: #{$size}em;
+    }
+
+    .mg-right-#{$value-no-dot}{
+        margin-right: #{$size}em;
+    }
+
+    .mg-top-#{$value-no-dot}{
+        margin-top: #{$size}em;
+    }
+}
+

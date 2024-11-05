@@ -1,0 +1,14 @@
+{
+  "name": "danysigha.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "script.js",
+  "scripts": {
+    "sass": "npx sass --watch scss/main.scss:dist/main.css scss/mobile.scss:dist/main_mobile.css"
+  },
+  "author": "Dany Sigha",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.80.5"
+  }
+}

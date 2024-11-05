@@ -1,0 +1,131 @@
+@media screen and (max-width: 880px) {
+    /* can also add a range min and max */
+
+    .project_links{
+        .video_one,
+        .video_two, 
+        .video_three{
+            & iframe{
+                width: 90%;
+                height: 60%;
+            }
+        }
+
+        .video_four{
+            & iframe{
+                width: 90%;
+                height: 70%;
+            }
+        }
+    }
+    
+    .work_experience{
+        .conteneur_experience{
+            margin-left: 1%;
+            width: 100%;
+    
+            & .experience1, 
+            & .experience2{
+                // padding-left: 5%;
+                padding: 0px;
+                margin-left: 1%;
+            }
+        }
+    }
+    
+    .activities{
+        .conteneur_activities{
+            width: 100%;
+            margin-left: 0%;
+    
+            & div{
+                width: 100%;
+                // padding-left: 5%;
+                padding: 0px;
+                margin-left: 1%;
+            }
+        }
+    }
+    
+    nav {
+        & a{
+            gap: 7px;
+            font-size: 0.7em;
+        }
+    }
+}
+
+
+@media screen and (max-width: 699px) {
+
+    .video_one iframe,
+    .video_two iframe,
+    .video_three iframe{
+        width: 90%;
+        height:50%;
+    }
+
+    .video_four iframe{
+        width: 90%;
+        height:50%;
+    }
+
+    nav{
+        margin-left: 0em;
+        
+        // & a{
+        //     gap: 7px;
+        //     font-size: 0.7em;
+        // }
+    }
+
+    // nav a,
+    // nav a:hover{
+    //     gap: 7px;
+    //     font-size: 0.7em;
+    // }
+
+    .conteneur_experience{
+        margin-left: 1%;
+        width: 100%;
+    }
+
+    // .greetings{
+    //     padding-top: 5em;
+    // }
+    
+}
+
+
+@media screen and (max-width: 450px) { 
+
+    // nav a,
+    // nav a:hover{
+    //     gap: 7px;
+    //     font-size: 0.6em;
+    // }
+    nav{
+        & a{
+            // gap: 7px;
+            font-size: 0.6em;
+            // font-size: 0.7em;
+        }
+    }
+
+    .short_bio img{
+        width: 200px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 389px) { 
+
+    nav{
+        & a{
+            font-size: 0.56em;
+        }
+    }
+}
+

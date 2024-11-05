@@ -610,9 +610,9 @@ em{
         margin: auto;
     }
 
-    .video_one,
-    .video_two, 
-    .video_three{
+    .video_one iframe,
+    .video_two iframe, 
+    .video_three iframe{
         margin-bottom: 2em;
     }
 

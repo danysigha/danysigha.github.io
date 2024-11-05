@@ -1,0 +1,8 @@
+@mixin iframe-border($color){ // can have multiple parameters
+    border: 5px solid $black-color;
+    box-shadow:
+    5px 5px $color,
+    10px 10px $black-color,
+    inset 5px 5px $white-color,
+    inset 10px 10px $black-color;
+}
