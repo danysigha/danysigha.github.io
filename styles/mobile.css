@@ -1,113 +1,69 @@
-
 @media screen and (max-width: 880px) {
     /* can also add a range min and max */
-    #travels{
-        display: none;
+    .project_links .video_one iframe,
+    .project_links .video_two iframe,
+    .project_links .video_three iframe {
+      width: 90%;
+      height: 60%;
     }
-
-    .video_one iframe,
-    .video_two iframe, 
-    .video_three iframe{
-        width: 90%;
-        height:50%;
+    .project_links .video_four iframe {
+      width: 90%;
+      height: 70%;
     }
-
-   
-
-    .video_four iframe{
-        width: 90%;
-        height:70%;
+    .work_experience .conteneur_experience {
+      margin-left: 1%;
+      width: 100%;
     }
-
-    .conteneur_experience{
-        margin-left: 1%;
-        width: 100%;
+    .work_experience .conteneur_experience .experience1, .work_experience .conteneur_experience .experience2 {
+      padding: 0px;
+      margin-left: 1%;
     }
-
-    .experience1,
-    .experience2{
-        padding-left: 5%;
-        padding: 0px;
-        margin-left: 1%;
+    .activities .conteneur_activities {
+      width: 100%;
+      margin-left: 0%;
     }
-
-    .conteneur_activities div{
-        width: 100%;
-        padding-left: 5%;
-        padding: 0px;
-        margin-left: 1%;
+    .activities .conteneur_activities div {
+      width: 100%;
+      padding: 0px;
+      margin-left: 1%;
     }
-
-    .conteneur_activities{
-        width: 100%;
-        margin-left: 0%;
+    nav a {
+      gap: 7px;
+      font-size: 0.7em;
     }
-
-    nav a,
-    nav a:hover{
-        gap: 7px;
-        font-size: 0.7em;
-    }
-
-}
-
-
-@media screen and (max-width: 699px) { 
-
-    #travels{
-        display: none;
-    }
-
+  }
+  @media screen and (max-width: 699px) {
     .video_one iframe,
     .video_two iframe,
-    .video_three iframe{
-        width: 90%;
-        height:50%;
+    .video_three iframe {
+      width: 90%;
+      height: 50%;
     }
-
-    .video_four iframe{
-        width: 90%;
-        height:70%;
+    .video_four iframe {
+      width: 90%;
+      height: 50%;
     }
-
-    .short_bio p{
-        margin: 0%;
-        padding: 0%;
-        width: 100%;
+    nav {
+      margin-left: 0em;
     }
-
-    nav{
-        margin-left: 0em;
+    .conteneur_experience {
+      margin-left: 1%;
+      width: 100%;
     }
-
-    nav a,
-    nav a:hover{
-        gap: 7px;
-        font-size: 0.7em;
+  }
+  @media screen and (max-width: 450px) {
+    nav a {
+      font-size: 0.6em;
     }
-
-    .conteneur_experience{
-        margin-left: 1%;
-        width: 100%;
+    .short_bio img {
+      width: 200px;
     }
-
-    .greetings{
-        padding-top: 5em;
+  }
+  @media screen and (max-width: 389px) {
+    nav a {
+      font-size: 0.56em;
     }
-    
-}
-
-
-@media screen and (max-width: 450px) { 
-
-    nav a,
-    nav a:hover{
-        gap: 7px;
-        font-size: 0.6em;
-    }
-
-    .short_bio img{
-        width: 200px;
-    }
-    
-}
+  }
+  
+  /*# sourceMappingURL=main_mobile.css.map */
+  
